@@ -23,6 +23,8 @@ spec:
     volumeMounts:
     - name: docker-sock
       mountPath: /var/run/docker.sock
+    - name: docker-config
+      mountPath: /root/.docker
   volumes:
   - name: docker-sock
     hostPath:
