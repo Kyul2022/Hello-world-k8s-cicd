@@ -64,6 +64,7 @@ metadata:
   labels:
     jenkins: agent
 spec:
+  serviceAccountName: jenkins
   containers:
   - name: kubectl
     image: alpine/k8s:1.28.3
